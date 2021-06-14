@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>ncar.github.io/esds/</id>
   <title>NCAR ESDS</title>
-  <updated>2021-04-30T20:21:24.888267+00:00</updated>
+  <updated>2021-06-14T11:33:24.172555+00:00</updated>
   <link href="ncar.github.io/esds/"/>
   <link href="ncar.github.io/esds/blog/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.18">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.19">ABlog</generator>
   <entry>
     <id>ncar.github.io/esds/posts/Interactive_Dashboard/</id>
     <title>HiRes-CESM Interactive Dashboard Example</title>
@@ -140,5 +140,89 @@
     <category term="dask" label="dask"/>
     <category term="pop" label="pop"/>
     <published>2021-04-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/paired_programming_vs/</id>
+    <title>Paired Programming using VS Code</title>
+    <updated>2021-05-06T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;A common task when developing notebooks or packages is collaborating with others. It can be challenging to do this when using JupyterHub since two people cannot access the same notebook at same time. One solution to this is to use Visual Studio Code (VS Code) to remotely access Casper/Cheyenne, use a virtual meeting plaform (Zoom, Google Meet), and interactively collaborate on development.&lt;/p&gt;
+&lt;p&gt;This process includes a few steps:&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/paired_programming_vs/" rel="alternate"/>
+    <summary>A common task when developing notebooks or packages is collaborating with others. It can be challenging to do this when using JupyterHub since two people cannot access the same notebook at same time. One solution to this is to use Visual Studio Code (VS Code) to remotely access Casper/Cheyenne, use a virtual meeting plaform (Zoom, Google Meet), and interactively collaborate on development.This process includes a few steps:</summary>
+    <category term="editor" label="editor"/>
+    <category term="paired-programming" label="paired-programming"/>
+    <category term="remote-access" label="remote-access"/>
+    <published>2021-05-06T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/intake_cmip6_debug/</id>
+    <title>Debugging Intake-ESM Process for Reading in CMIP6</title>
+    <updated>2021-05-14T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;This post was motivated by a post from Steve Yeager &lt;a class="reference external" href="https://github.com/sgyeager"&gt;&amp;#64;sgyeager&lt;/a&gt;, who ran into an error when attempting to read in CMIP6 data via intake-esm.&lt;/p&gt;
+&lt;p&gt;For those who are unfamiliar with intake-esm, be sure to read over &lt;a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/index.html"&gt;the documentation&lt;/a&gt;! The user guide even includes &lt;a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/user-guide/cmip6-tutorial.html"&gt;an entire portion of their site&lt;/a&gt; on looking at CMIP6 data. These resources would be a great place to start.&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/intake_cmip6_debug/" rel="alternate"/>
+    <summary>This post was motivated by a post from Steve Yeager @sgyeager, who ran into an error when attempting to read in CMIP6 data via intake-esm.For those who are unfamiliar with intake-esm, be sure to read over the documentation! The user guide even includes an entire portion of their site on looking at CMIP6 data. These resources would be a great place to start.</summary>
+    <category term="intake" label="intake"/>
+    <category term="cmip6" label="cmip6"/>
+    <category term="debug" label="debug"/>
+    <published>2021-05-14T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/dask-summit-takeaway/</id>
+    <title>Dask Distributed Summit 2021 Takeaways</title>
+    <updated>2021-05-28T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;Cloud optimized datasets help improve speed of analysis&lt;/p&gt;
+&lt;p&gt;Entire 4 TB datasets open up in a few seconds&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/dask-summit-takeaway/" rel="alternate"/>
+    <summary>Cloud optimized datasets help improve speed of analysisEntire 4 TB datasets open up in a few seconds</summary>
+    <category term="dask" label="dask"/>
+    <category term="conference" label="conference"/>
+    <category term="open-science" label="open-science"/>
+    <published>2021-05-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/ecgtools-history-files-example/</id>
+    <title>Building an Intake-esm catalog from CESM2 History Files</title>
+    <updated>2021-06-04T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;As mentioned in a couple of ESDS posts (&lt;a class="reference external" href="https://ncar.github.io/esds/posts/intake_esm_dask/"&gt;intake-esm and Dask&lt;/a&gt;, &lt;a class="reference external" href="https://ncar.github.io/esds/posts/intake_cmip6_debug/"&gt;debugging intake-esm&lt;/a&gt;), &lt;a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/"&gt;intake-esm&lt;/a&gt; can be a helpful tool to work with when dealing with model data, especially CESM. One of the requirements for using intake-esm is having a catalog which is comprised of two pieces:&lt;/p&gt;
+&lt;p&gt;A table of the relevant metadata (ex. file path, variable, stream, etc.)&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/ecgtools-history-files-example/" rel="alternate"/>
+    <summary>As mentioned in a couple of ESDS posts (intake-esm and Dask, debugging intake-esm), intake-esm can be a helpful tool to work with when dealing with model data, especially CESM. One of the requirements for using intake-esm is having a catalog which is comprised of two pieces:A table of the relevant metadata (ex. file path, variable, stream, etc.)</summary>
+    <category term="intake" label="intake"/>
+    <category term="cesm" label="cesm"/>
+    <published>2021-06-04T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/graphviz_example/</id>
+    <title>Creating Visualizations of Intake-ESM Catalogs</title>
+    <updated>2021-06-11T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;A common initial task when working with a new dataset is figuring out what data is available. This is especially true when working with climate ensembles with several components and time-frequency output (ex. Community Earth System Model Large Ensemble, CESM-LE). Here, we will examine different methods of investigating this catalog&lt;/p&gt;
+&lt;p&gt;Here, we will use &lt;a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/"&gt;intake-esm&lt;/a&gt; and &lt;a class="reference external" href="https://graphviz.readthedocs.io/en/stable/manual.html"&gt;graphviz&lt;/a&gt;, which can be installed using the following (including jupyterlab too!)&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/graphviz_example/" rel="alternate"/>
+    <summary>A common initial task when working with a new dataset is figuring out what data is available. This is especially true when working with climate ensembles with several components and time-frequency output (ex. Community Earth System Model Large Ensemble, CESM-LE). Here, we will examine different methods of investigating this catalogHere, we will use intake-esm and graphviz, which can be installed using the following (including jupyterlab too!)</summary>
+    <category term="visualization" label="visualization"/>
+    <category term="intake" label="intake"/>
+    <category term="cesm" label="cesm"/>
+    <published>2021-06-11T00:00:00+00:00</published>
   </entry>
 </feed>
