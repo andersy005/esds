@@ -2,7 +2,6 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "38b6b01d",
    "metadata": {},
    "source": [
     "# Using Intake-ESM to Analyze Data from CESM2-LE\n",
@@ -43,7 +42,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "af376e02",
    "metadata": {},
    "source": [
     "## Using the Catalog\n",
@@ -56,7 +54,6 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "f994b788",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -69,7 +66,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "e8867c20",
    "metadata": {},
    "source": [
     "### Spin up our Dask Cluster"
@@ -78,7 +74,6 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "b35c1143",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -95,7 +90,6 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "46944f57",
    "metadata": {},
    "outputs": [
     {
@@ -679,7 +673,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "e97de9c8",
    "metadata": {},
    "source": [
     "### Read in the data catalog\n",
@@ -690,7 +683,6 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "0c846828",
    "metadata": {},
    "outputs": [
     {
@@ -710,7 +702,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "043b4df5",
    "metadata": {},
    "source": [
     "Let's take a second to investigate the catalog - each file on disk represents an `asset`, which means that there are over 4 **million** files within the `/glade/campaign/cgd/cesm/CESM2-LE/timeseries/` directory"
@@ -719,7 +710,6 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "737020c3",
    "metadata": {},
    "outputs": [
     {
@@ -833,19 +823,19 @@
   },
   {
    "cell_type": "markdown",
-   "id": "6ddd1c05",
    "metadata": {},
    "source": [
     "### Querying for our desired variable\n",
     "In this case, we are interested in the surface temperature in Boulder, Colorado. There are **numerous** temperature variables in the dataset, we can search for all the `long_names` from atmospheric output.\n",
     "\n",
-    "We can use the wildcard here `*` to look for where both capital and lowercase `temperature` show up in the `long_name`"
+    "We setup a function to loop through and see which variables include 'temperature' in the `long_name`\n",
+    "\n",
+    "We can use the wildcard here `*` to look for where both captial and lowercase `temperature` show up"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 12,
-   "id": "4b882a97",
    "metadata": {},
    "outputs": [
     {
@@ -887,17 +877,15 @@
   },
   {
    "cell_type": "markdown",
-   "id": "4bf559e8",
    "metadata": {},
    "source": [
     "### Query and Subset our Catalog\n",
-    "Let's go with `Lowest model level temperature` since this represents the closest to the surface without being at the **actual** surface of the earth. We pass the `component` and `long_name` into the query, which reduces the number of datasets to 8!"
+    "Let's go with `Lowest model level temperature` since this represents the closest to the surface without being at the **actuall** surface of the earth. We pass the `component` and `long_name` into the query, which reduces the number of datasets to 8!"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 13,
-   "id": "211b27c2",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -907,7 +895,6 @@
   {
    "cell_type": "code",
    "execution_count": 14,
-   "id": "e3795f93",
    "metadata": {},
    "outputs": [
     {
@@ -1021,7 +1008,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "90a44c38",
    "metadata": {},
    "source": [
     "## Read in using `.to_dataset_dict()`\n",
@@ -1032,7 +1018,6 @@
   {
    "cell_type": "code",
    "execution_count": 15,
-   "id": "ad3787a4",
    "metadata": {},
    "outputs": [
     {
@@ -1082,7 +1067,6 @@
   {
    "cell_type": "code",
    "execution_count": 28,
-   "id": "ea8b3ed2",
    "metadata": {},
    "outputs": [
     {
@@ -1102,7 +1086,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "2becf0f2",
    "metadata": {},
    "source": [
     "Let's take a look at the keys - these are defined by the `groupby` attributes in the catalog. The groupby attributes in this case are:\n",
@@ -1117,7 +1100,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "dcf4aaf3",
    "metadata": {},
    "source": [
     "### Define a helper function which subsets the data, groups by year, and returns the data array"
@@ -1126,7 +1108,6 @@
   {
    "cell_type": "code",
    "execution_count": 29,
-   "id": "01a6596f",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1143,7 +1124,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "8ddbfcb9",
    "metadata": {},
    "source": [
     "#### Look at one of the datasets"
@@ -1152,7 +1132,6 @@
   {
    "cell_type": "code",
    "execution_count": 30,
-   "id": "8c77d7f9",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1161,7 +1140,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "4c9fdfc6",
    "metadata": {},
    "source": [
     "#### Apply our function"
@@ -1170,7 +1148,6 @@
   {
    "cell_type": "code",
    "execution_count": 32,
-   "id": "58f0318c",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1179,7 +1156,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "8e01909e",
    "metadata": {},
    "source": [
     "### Plot our Results!"
@@ -1188,7 +1164,6 @@
   {
    "cell_type": "code",
    "execution_count": 51,
-   "id": "19f0eb8d",
    "metadata": {
     "tags": []
    },
@@ -1238,7 +1213,6 @@
   },
   {
    "cell_type": "markdown",
-   "id": "acfab4b4",
    "metadata": {},
    "source": [
     "## Conclusion\n",
@@ -1250,7 +1224,7 @@
   "author": "Max Grover",
   "date": "2021-08-06",
   "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
+   "display_name": "Python 3",
    "language": "python",
    "name": "python3"
   },
@@ -1264,7 +1238,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.9.5"
+   "version": "3.8.5"
   },
   "tags": "intake,cesm,cesm2-le",
   "title": "Using Intake-ESM to Analyze Data from CESM2-LE "
