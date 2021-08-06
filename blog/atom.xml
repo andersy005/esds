@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>ncar.github.io/esds/</id>
   <title>NCAR ESDS</title>
-  <updated>2021-06-23T18:13:18.105829+00:00</updated>
+  <updated>2021-08-06T22:28:13.627753+00:00</updated>
   <link href="ncar.github.io/esds/"/>
   <link href="ncar.github.io/esds/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.19">ABlog</generator>
@@ -625,5 +625,124 @@ What should I do?</summary>
     <category term="diagnostics" label="diagnostics"/>
     <category term="conference" label="conference"/>
     <published>2021-06-17T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/model_documentation_jupyterbook/</id>
+    <title>Creating Model Documentation Using Jupyterbook and Intake-esm</title>
+    <updated>2021-06-25T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;A common step to any project is documenting your data and your data workflow. Fortunately, open tools in the scientific python ecosystem make that much easier! In this example, we will cover creating your github repo, creating the catalog, visualizing the catalog, and generating a static webpage you can share with collaborators!&lt;/p&gt;
+&lt;p&gt;This week’s post is quite detailed, so just a warning! If you would like to look at the finished product, check out the following&lt;/p&gt;
+&lt;img alt="CESM book page" src="../_images/cesm_book_page.png" /&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/model_documentation_jupyterbook/" rel="alternate"/>
+    <summary>A common step to any project is documenting your data and your data workflow. Fortunately, open tools in the scientific python ecosystem make that much easier! In this example, we will cover creating your github repo, creating the catalog, visualizing the catalog, and generating a static webpage you can share with collaborators!This week’s post is quite detailed, so just a warning! If you would like to look at the finished product, check out the followingCESM book page</summary>
+    <category term="jupyter" label="jupyter"/>
+    <category term="cesm" label="cesm"/>
+    <category term="intake" label="intake"/>
+    <category term="documentation" label="documentation"/>
+    <published>2021-06-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/scaling-with-dask-class-takeaways/</id>
+    <title>Scaling Python with Dask Class Takeaways</title>
+    <updated>2021-07-02T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;This week, I had the opportunity to attend the &lt;a class="reference external" href="https://coiled.io/scaling-python-with-dask/"&gt;Scaling Python with Dask&lt;/a&gt; class offered by &lt;a class="reference external" href="https://coiled.io/"&gt;Coiled&lt;/a&gt;. The class provided an overview of a variety of topics, including:&lt;/p&gt;
+&lt;p&gt;Parellelizing Python Code&lt;/p&gt;
+&lt;img alt="NCARCluster view" src="../_images/ncar_cluster.png" /&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/scaling-with-dask-class-takeaways/" rel="alternate"/>
+    <summary>This week, I had the opportunity to attend the Scaling Python with Dask class offered by Coiled. The class provided an overview of a variety of topics, including:Parellelizing Python CodeNCARCluster view</summary>
+    <category term="dask" label="dask"/>
+    <category term="tutorial" label="tutorial"/>
+    <published>2021-07-02T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/dask-tutorial/</id>
+    <title>Dask Tutorial</title>
+    <updated>2021-07-08T00:00:00+00:00</updated>
+    <author>
+      <name>Julia Kent</name>
+    </author>
+    <content type="html">&lt;p&gt;The NCAR/UCAR virtual Python Tutorial Seminar Series continues with a 2-part introduction to the Python package &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;dask&lt;/span&gt;&lt;/code&gt; on &lt;strong&gt;Wednesday, July 14th&lt;/strong&gt; and &lt;strong&gt;August 11th at 1 PM Mountain Daylight Time&lt;/strong&gt;. These sessions will be led by Anderson Banihirwe.&lt;/p&gt;
+&lt;p&gt;The content for this tutorial is hosted on Anderson’s &lt;a class="reference external" href="https://github.com/andersy005/xarray-tutorial"&gt;Xarray Tutorial Github Repository&lt;/a&gt;. This is the same repository as the previous Xarray tutorials.&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/dask-tutorial/" rel="alternate"/>
+    <summary>The NCAR/UCAR virtual Python Tutorial Seminar Series continues with a 2-part introduction to the Python package dask on Wednesday, July 14th and August 11th at 1 PM Mountain Daylight Time. These sessions will be led by Anderson Banihirwe.The content for this tutorial is hosted on Anderson’s Xarray Tutorial Github Repository. This is the same repository as the previous Xarray tutorials.</summary>
+    <category term="python-tutorial-series" label="python-tutorial-series"/>
+    <published>2021-07-08T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/dask-tutorial-update/</id>
+    <title>Dask Tutorial UPDATED DATES</title>
+    <updated>2021-07-23T00:00:00+00:00</updated>
+    <author>
+      <name>Julia Kent</name>
+    </author>
+    <content type="html">&lt;p&gt;The NCAR/UCAR virtual Python Tutorial Seminar Series continues with a 2-part introduction to the Python package &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;dask&lt;/span&gt;&lt;/code&gt; on &lt;strong&gt;Wednesday, July 28th&lt;/strong&gt; and &lt;strong&gt;August 11th at 1 PM Mountain Daylight Time&lt;/strong&gt;. These sessions will be led by Anderson Banihirwe.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; These dates have changed from the previous Dask Tutorial announcement.&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/dask-tutorial-update/" rel="alternate"/>
+    <summary>The NCAR/UCAR virtual Python Tutorial Seminar Series continues with a 2-part introduction to the Python package dask on Wednesday, July 28th and August 11th at 1 PM Mountain Daylight Time. These sessions will be led by Anderson Banihirwe.Note: These dates have changed from the previous Dask Tutorial announcement.</summary>
+    <category term="python-tutorial-series" label="python-tutorial-series"/>
+    <published>2021-07-23T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/scipy-2021-takeaways/</id>
+    <title>SciPy Conference 2021 Takeaways</title>
+    <updated>2021-07-26T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;A couple weeks ago, I had an opportunity to (virtually) attend the Scientific Computing with Python (SciPy) Conference! The conference consisted of three primary sections:&lt;/p&gt;
+&lt;p&gt;Tutorials (Monday/Tuesday)&lt;/p&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/scipy-2021-takeaways/" rel="alternate"/>
+    <summary>A couple weeks ago, I had an opportunity to (virtually) attend the Scientific Computing with Python (SciPy) Conference! The conference consisted of three primary sections:Tutorials (Monday/Tuesday)</summary>
+    <category term="conference" label="conference"/>
+    <category term="scipy" label="scipy"/>
+    <category term="open-source" label="open-source"/>
+    <published>2021-07-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/project-pythia-overview/</id>
+    <title>Project Pythia Portal Overview</title>
+    <updated>2021-07-30T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;Last year, the Project Pythia team was formed to “provide a public, web-accessible training resource that will help educate current, and aspiring, earth scientists to more effectively use both the Scientific Python Ecosystem and Cloud Computing to make sense of huge volumes of numerical scientific data.”&lt;/p&gt;
+&lt;p&gt;The team is formally a collaboration between three main organizations, although contributors come from throughout the scientific Python community:&lt;/p&gt;
+&lt;img alt="Pythia Portal" src="../_images/pythia_portal.png" /&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/project-pythia-overview/" rel="alternate"/>
+    <summary>Last year, the Project Pythia team was formed to “provide a public, web-accessible training resource that will help educate current, and aspiring, earth scientists to more effectively use both the Scientific Python Ecosystem and Cloud Computing to make sense of huge volumes of numerical scientific data.”The team is formally a collaboration between three main organizations, although contributors come from throughout the scientific Python community:Pythia Portal</summary>
+    <category term="pythia" label="pythia"/>
+    <category term="training" label="training"/>
+    <category term="education" label="education"/>
+    <published>2021-07-30T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ncar.github.io/esds/posts/intake-cesm2-le-glade-example/</id>
+    <title>Using Intake-ESM to Analyze Data from CESM2-LE</title>
+    <updated>2021-08-06T00:00:00+00:00</updated>
+    <author>
+      <name>Max Grover</name>
+    </author>
+    <content type="html">&lt;p&gt;In mid June, the &lt;a class="reference external" href="https://www.cesm.ucar.edu/projects/community-projects/LENS2/"&gt;CESM2 Large Ensemble&lt;/a&gt; dataset was made available to the public. This model was run in collaboration with the &lt;a class="reference external" href="https://ibsclimate.org/"&gt;IBS Center for Climate Physics&lt;/a&gt; and the &lt;a class="reference external" href="https://ncar.ucar.edu/"&gt;National Center for Atmospheric Research&lt;/a&gt; This dataset includes 100 ensemble members, at one degree spatial resolution, with each ensemble member including data from 1850 to 2100. If you are interested in learning more about how this ensemble was setup, be sure to check out &lt;a class="reference external" href="https://www.cesm.ucar.edu/projects/community-projects/LENS2/"&gt;the main webpage&lt;/a&gt; or read the pre-print of &lt;a class="reference external" href="https://esd.copernicus.org/preprints/esd-2021-50/"&gt;Rodgers et al. 2021&lt;/a&gt; which describes this dataset in detail.&lt;/p&gt;
+&lt;p&gt;One of these challenges with this dataset is dealing with the massive amount of output. The data are available through the &lt;a class="reference external" href="https://www.cesm.ucar.edu/projects/community-projects/LENS2/data-sets.html"&gt;NCAR Climate Data Gateway&lt;/a&gt; and via the &lt;a class="reference external" href="https://climatedata.ibs.re.kr/data/cesm2-lens"&gt;IBS OpenDAP Server&lt;/a&gt;. There is also a subset of the dataset available on the GLADE file system on NCAR HPC resources available within the directory &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/glade/campaign/cgd/cesm/CESM2-LE/timeseries/&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;img alt="intake-esm catalogs" src="../_images/intake_esm_catalogs.png" /&gt;
+</content>
+    <link href="ncar.github.io/esds/posts/intake-cesm2-le-glade-example/" rel="alternate"/>
+    <summary>In mid June, the CESM2 Large Ensemble dataset was made available to the public. This model was run in collaboration with the IBS Center for Climate Physics and the National Center for Atmospheric Research This dataset includes 100 ensemble members, at one degree spatial resolution, with each ensemble member including data from 1850 to 2100. If you are interested in learning more about how this ensemble was setup, be sure to check out the main webpage or read the pre-print of Rodgers et al. 2021 which describes this dataset in detail.One of these challenges with this dataset is dealing with the massive amount of output. The data are available through the NCAR Climate Data Gateway and via the IBS OpenDAP Server. There is also a subset of the dataset available on the GLADE file system on NCAR HPC resources available within the directory /glade/campaign/cgd/cesm/CESM2-LE/timeseries/.intake-esm catalogs</summary>
+    <category term="intake" label="intake"/>
+    <category term="cesm" label="cesm"/>
+    <category term="cesm2-le" label="cesm2-le"/>
+    <published>2021-08-06T00:00:00+00:00</published>
   </entry>
 </feed>
