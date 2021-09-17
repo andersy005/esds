@@ -244,7 +244,86 @@ commentsRunWhenDOMLoaded(addUtterances);
 
   <div class="section">
     <h2>
-      <a href="../../../posts/graphviz_example/"
+      <a href="../../../posts/2021/intake-esm-holoviews-diagnostics/"
+        >Examining Diagnostics Using Intake-ESM and hvPlot</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 20 August 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/max-grover/">Max Grover</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../cesm/">cesm</a>   
+  <a href="../intake/">intake</a>   
+  <a href="#">visualization</a>   
+  <a href="../diagnostics/">diagnostics</a>  
+</li>
+ 
+    </ul>
+    <p>In previous weeks, we have looked at <a class="reference external" href="https://ncar.github.io/esds/posts/2021/ecgtools-history-files-example/">building Intake-ESM catalogs from history files</a> and <a class="reference external" href="https://ncar.github.io/esds/posts/2021/cesm-datashader/">visualizing CESM output using Holoviews and Datashader</a>, but this week we are putting together a few of those pieces to visualize a comparison between model runs.</p>
+<p>One of the first ESDS blog posts looked at <a class="reference external" href="https://ncar.github.io/esds/posts/2021/Interactive_Dashboard/">building an interactive dashboard to look at plots</a>, using high resolution ocean model output as the dataset. One of the limitations of that approach is that the images are static - we are pulling in <code class="docutils literal notranslate"><span class="pre">png</span></code>s, and rending on the page, as opposed to more interactive options. In this example, we will read in data generated from <a class="reference external" href="https://ecgtools.readthedocs.io/en/latest/">ecgtools</a>, from a directory only accessible via NCAR’s high performance computing center.</p>
+
+    <p><a href="../../../posts/2021/intake-esm-holoviews-diagnostics/">Read more ...</a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section">
+    <h2>
+      <a href="../../../posts/2021/cesm-datashader/"
+        >Plotting CESM Data on an Unstructured Grid using Geoviews and Datashader</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 13 August 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/max-grover/">Max Grover</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../unstructured-grids/">unstructured grids</a>   
+  <a href="../cesm/">cesm</a>   
+  <a href="#">visualization</a>  
+</li>
+ 
+    </ul>
+    <p>This week, during Xdev office hours, <a class="reference external" href="https://staff.ucar.edu/users/yeager">Steve Yeager</a> raised a question regarding plotting unstructured grid data within Python. He was interested in plotting output from the <a class="reference external" href="https://www.cesm.ucar.edu/models/atm-cam/#:~:text=The%20Community%20Earth%20System%20Model,Department%20of%20Energy%20(DOE).">Community Atmosphere Model</a>, which supports unstructured grids, essentially a combination of triangles allowing for higher resolution in certain parts of the domain. This can be adventageous when wanting to achieve the benefits of high resolution within the primary domain, while maintaining the global scale of the model. This week, <a class="reference external" href="https://twitter.com/NCAR_Science/status/1425583582819483652?s=20">NCAR Science</a> tweeted a great explanation of how revolutionary this capability is in the context of resolving processes over Greenland.</p>
+<p>Unstructured grids can be difficult to plot directly within Python since they do not follow the typical <code class="docutils literal notranslate"><span class="pre">lat</span></code>, <code class="docutils literal notranslate"><span class="pre">lon</span></code> (x, y) convention. There is some preprocessing that needs to be applied before plotting.</p>
+
+    <p><a href="../../../posts/2021/cesm-datashader/">Read more ...</a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section">
+    <h2>
+      <a href="../../../posts/2021/graphviz_example/"
         >Creating Visualizations of Intake-ESM Catalogs</a
       >
     </h2>
@@ -276,7 +355,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <p>A common initial task when working with a new dataset is figuring out what data is available. This is especially true when working with climate ensembles with several components and time-frequency output (ex. Community Earth System Model Large Ensemble, CESM-LE). Here, we will examine different methods of investigating this catalog</p>
 <p>Here, we will use <a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/">intake-esm</a> and <a class="reference external" href="https://graphviz.readthedocs.io/en/stable/manual.html">graphviz</a>, which can be installed using the following (including jupyterlab too!)</p>
 
-    <p><a href="../../../posts/graphviz_example/">Read more ...</a></p>
+    <p><a href="../../../posts/2021/graphviz_example/">Read more ...</a></p>
     <hr />
   </div>
    
@@ -299,12 +378,15 @@ commentsRunWhenDOMLoaded(addUtterances);
   <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
   
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B50ZRRN69X"></script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
 <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('config', 'G-B50ZRRN69X');
-                </script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-196809533-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     

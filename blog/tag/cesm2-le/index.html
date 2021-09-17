@@ -244,7 +244,46 @@ commentsRunWhenDOMLoaded(addUtterances);
 
   <div class="section">
     <h2>
-      <a href="../../../posts/intake-cesm2-le-glade-example/"
+      <a href="../../../posts/2021/intake-obs-cesm2le-comparison/"
+        >Comparing Atmospheric Model Output with Observations Using Intake-ESM</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> 27 August 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../../author/max-grover/">Max Grover</a>  
+</li>
+    
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../intake/">intake</a>   
+  <a href="../observations/">observations</a>   
+  <a href="#">cesm2-le</a>  
+</li>
+ 
+    </ul>
+    <p>Comparing models and observations is a critical component of climate diagnostic packages. This process can be challenging though - given the number of observational datasets to compare against, and the difference in spatiotemporal resolutions. In the previous iteration of the diagnostics package used for atmospheric data from the Community Earth System Model (CESM), they used pre-computed, observational datasets stored in a directory on the GLADE filesystem (<code class="docutils literal notranslate"><span class="pre">/glade/p/cesm/amwg/amwg_diagnostics/obs_data</span></code>)</p>
+<p>Within this example, we walk though generating an <code class="docutils literal notranslate"><span class="pre">intake-esm</span></code> catalog from the observational data, reading in CESM data, and compare models and observations</p>
+
+    <p><a href="../../../posts/2021/intake-obs-cesm2le-comparison/">Read more ...</a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section">
+    <h2>
+      <a href="../../../posts/2021/intake-cesm2-le-glade-example/"
         >Using Intake-ESM to Analyze Data from CESM2-LE</a
       >
     </h2>
@@ -277,7 +316,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>One of these challenges with this dataset is dealing with the massive amount of output. The data are available through the <a class="reference external" href="https://www.cesm.ucar.edu/projects/community-projects/LENS2/data-sets.html">NCAR Climate Data Gateway</a> and via the <a class="reference external" href="https://climatedata.ibs.re.kr/data/cesm2-lens">IBS OpenDAP Server</a>. There is also a subset of the dataset available on the GLADE file system on NCAR HPC resources available within the directory <code class="docutils literal notranslate"><span class="pre">/glade/campaign/cgd/cesm/CESM2-LE/timeseries/</span></code>.</p>
 <img alt="intake-esm catalogs" src="../../../_images/intake_esm_catalogs.png" />
 
-    <p><a href="../../../posts/intake-cesm2-le-glade-example/">Read more ...</a></p>
+    <p><a href="../../../posts/2021/intake-cesm2-le-glade-example/">Read more ...</a></p>
     <hr />
   </div>
    
@@ -300,12 +339,15 @@ commentsRunWhenDOMLoaded(addUtterances);
   <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
   
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B50ZRRN69X"></script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
 <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('config', 'G-B50ZRRN69X');
-                </script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-196809533-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
