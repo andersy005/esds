@@ -4,15 +4,18 @@ Currently, we have a few different ways to give involved with the ESDS effort.
 
 ## ESDS Activities
 
-### Work-in-Progress (WIP) Talks
+### ESDS Forum
 
-Every other Monday, we hold WIP talks which are forums to present on a variety topics! Examples include:
+Every other Monday, we hold the ESDS Forum, which provides a venue for discussion, coordination and "Work In Progress" (WIP) talks.
+Examples include:
 
 - Workflow demos
 - Overview of some package
 - Focused discussions on some new effort
 
 This is a great place to discuss progress on your project, and get feedback from the community!
+
+If you are interested in giving a talk, be sure to sign up using [this spreadsheet](https://docs.google.com/spreadsheets/d/1Tuv5vwGbjSKdJD5KLT0Zow8WCY0_zt35tTI6EIRGOk4/edit?usp=sharing)!
 
 ### Xdev Office Hours
 
